@@ -37,6 +37,20 @@ L1 and L2 losses with multi-scale support are available in [losses.py](./losses.
 
 ## Installation 
 
+    # update for cuda 11
+    # we use the way in https://zhuanlan.zhihu.com/p/511916025
+    git clone https://github.com/NVIDIA/flownet2-pytorch.git
+    cd flownet2-pytorch
+    cd networks/resample2d_package
+    python setup.py install
+    cd ..
+    cd correlation_package/
+    python setup.py install
+    cd ..
+    cd channelnorm_package/
+    python setup.py install
+    cd ..
+
     # get flownet2-pytorch source
     git clone https://github.com/NVIDIA/flownet2-pytorch.git
     cd flownet2-pytorch
