@@ -1,5 +1,6 @@
 #include <ATen/ATen.h>
-#include <torch/torch.h>
+#include <torch/extension.h>
+#include <ATen/cuda/CUDAContext.h>
 
 #include "resample2d_kernel.cuh"
 
